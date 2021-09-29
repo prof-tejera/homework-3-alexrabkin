@@ -13,3 +13,11 @@
 .Default-button:active {
   background-color: #d0d0d0;
 }
+
+.Green-button {
+  background-color: #37c732;
+}
+
+.Green-button:active {
+  background-color: #afd8ce;
+}

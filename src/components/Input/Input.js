@@ -2,7 +2,16 @@ import { Component } from 'react';
 
 class Input extends Component {
   render() {
-    return <input />;
+    const { onChange, placeholder, ...rest } = this.props;
+    return (
+      <>
+        <input
+          placeholder={placeholder}
+          onChange={(e) => onChange(e.target.value)}
+          {...rest}
+        />
+      </>
+    );
   }
 }
 
