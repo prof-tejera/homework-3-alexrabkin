@@ -6,11 +6,23 @@ import './MediaButtons.css';
 class MediaButtons extends Component {
   render() {
     return (
-      <Panel backgroundColor="blue">
-        <Button text="Rewind" onClick={() => {}} />
-        <Button text="Fast Forward" onClick={() => {}} />
-        <Button text="Play" onClick={() => {}} color="green" size="large" />
-        <Button text="Stop" onClick={() => {}} color="red" size="large" />
+      <Panel backgroundColor="black">
+        <Button text="Rewind" onClick={() => {}} className="default-button" />
+        <Button
+          text="Fast Forward"
+          onClick={() => {}}
+          className="default-button"
+        />
+        <Button
+          text="Play"
+          onClick={() => {}}
+          className="default-button green"
+        />
+        <Button
+          text="Stop"
+          onClick={() => {}}
+          className="default-button blue"
+        />
       </Panel>
     );
   }

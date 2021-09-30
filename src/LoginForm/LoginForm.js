@@ -11,20 +11,24 @@ class LoginForm extends Component {
   render() {
     return (
       <>
-        <Input
-          placeholder="username"
-          onChange={(username) => console.log(username)}
-        />
-        <Input
-          placeholder="password"
-          type="password"
-          onChange={(password) => console.log(password)}
-        />
-        <Button
-          text="Login"
-          className="Default-button Green-button"
-          onClick={this.handleSubmit}
-        />
+        <div className="form">
+          <Input
+            placeholder="username"
+            onChange={(username) => console.log(username)}
+          />
+          <br />
+          <Input
+            placeholder="password"
+            type="password"
+            onChange={(password) => console.log(password)}
+          />
+          <br />
+          <Button
+            text="Login"
+            className="default-button green"
+            onClick={this.handleSubmit}
+          />
+        </div>
       </>
     );
   }
