@@ -11,11 +11,11 @@ class RadioButtons extends Component {
     const { options } = this.props;
     return (
       <>
-        {options.map((page) => {
+        {options.map((option) => {
           return (
             <Button
-              key={page.value}
-              text={page.value}
+              key={option.value}
+              text={option.value}
               className="default-button blue-hover"
               onClick={this.handleOnClick}
             />
