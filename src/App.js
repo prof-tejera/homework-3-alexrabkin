@@ -7,6 +7,12 @@ import './App.css';
 
 class App extends Component {
   render() {
+    const options = [
+      { label: 'Apple', value: 'Apple' },
+      { label: 'Pear', value: 'Pear' },
+      { label: 'Orange', value: 'Orange' },
+    ];
+
     return (
       <div>
         <div className="App-component">
@@ -19,23 +25,23 @@ class App extends Component {
         </div>
 
         <div className="App-component">
-          <header className="App-header">Login form component (TODO)</header>
+          <header className="App-header">Login form component</header>
           <div className="App-content">
             <LoginForm />
           </div>
         </div>
 
         <div className="App-component">
-          <header className="App-header">Pager component (TODO)</header>
+          <header className="App-header">Pager component</header>
           <div className="App-content">
-            <Pager />
+            <Pager numPages={10} />
           </div>
         </div>
 
         <div className="App-component">
-          <header className="App-header">Radio Buttons component (TODO)</header>
+          <header className="App-header">Radio Buttons component</header>
           <div className="App-content">
-            <RadioButtons />
+            <RadioButtons options={options} />
           </div>
         </div>
       </div>
